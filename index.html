@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>HTML</title>
+  
+  <!-- HTML -->
+  
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div id="container">
+      <h1>مولد كلمات السر.</h2>
+      <div id="resultEl">
+        <p id="resultOutput">
+        </p>
+        <div><i class="far fa-copy" id="copyBtn"></i></div>
+      </div>
+      <form id="allInputsEl">
+        <div class="inputEl">
+          <label for="pLength">طول كلمة السر</label>
+          <input type="number" name="pLength" id="pLength" value="8" min="6" max="20"> 
+        </div>
+        <div class="inputEl">
+          <label for="pUppercase">استخدام احرف كبيرة</label>
+          <input type="checkbox" id="pUppercase" value="pUppercase" checked>
+        </div>
+        <div class="inputEl">
+          <label for="pLowercase">استخدام احرف صغيرة</label>
+          <input type="checkbox" id="pLowercase" value="pLowercase" uchecked>
+        </div>
+        <div class="inputEl">    
+          <label for="pNumbers">استخدام لٱرقام</label>
+          <input type="checkbox" id="pNumbers" value="pNumbers" checked>
+        </div>
+        <div class="inputEl">
+          <label for="pSymbols">استخدام الرموز</label>
+          <input type="checkbox" id="pSymbols" value="pSymbols" unchecked>
+        </div>
+        <button id="submitBtn">توليد كلمة السر</button>
+      </form>
+    </div>
+
+
+
+  <!-- Project -->
+  <script src="main.js"></script>
+</body>
+</html>
